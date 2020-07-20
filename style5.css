@@ -201,6 +201,49 @@ a.article, a.article:hover {
     padding-bottom: 50px;
 }
 
+/*-------  Hover on subtopic cards-------*/
+
+.img-card-container {
+  position: relative;
+  width: 50%;
+}
+
+.card-image-hover {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-card-image-content {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-card-container:hover .card-image-hover {
+  opacity: 0.3;
+}
+
+.img-card-container:hover .middle-card-image-content {
+  opacity: 1;
+}
+
+.card-image-text {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    padding: 16px 32px;
+}
+
+/*---------------------------------------*/
 
 /* ---------------------------------------------------
     MEDIAQUERIES
