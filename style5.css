@@ -204,7 +204,7 @@ a.article, a.article:hover {
 /*-------  Hover on subtopic cards-------*/
 
 .img-card-container {
-  position: relative;
+  position: static;
   width: 50%;
 }
 
@@ -241,6 +241,20 @@ a.article, a.article:hover {
     color: white;
     font-size: 13px;
     padding: 16px 32px;
+}
+
+.card-img-top {
+   
+max-height:220px;
+
+}
+
+.card .mb-2 {
+max-height: 10px;
+}
+
+.card .body {
+    max-height: 50px;
 }
 
 /*---------------------------------------*/
